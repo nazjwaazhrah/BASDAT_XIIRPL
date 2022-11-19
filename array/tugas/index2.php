@@ -1,37 +1,37 @@
 <?php
 
-$warnaterang = ['kuning','hiaju','pink'];
-$warnagelap = ['hitam','abu-abu','cokelat'];
+$warnaterang = ['kuning', 'hijau', 'pink'];
+$warnagelap = ['hitam', 'abu-abu', 'cokelat'];
 
-// gabung 2 array tersebut menjadi 1
-$warna_warna = array_merge($warnaterang,$warnagelap);
+// Gabungkan 2 array tersebut menjadi 1
+$warna_warna = array_merge($warnaterang, $warnagelap);
 
-// array_marge bisa ditambahkan lebih dari 2
+// array_merge bisa ditambahkan lebih dari 2
 $semua_warna = array_merge(
-    $warnaterang
-    $warnagelap
-    ['magenta','Cyan','Hijau','Kelabu']
+    $warnaterang,
+    $warnagelap,
+    ['magenta', 'cyan', 'hijau kelapu']
 );
 
-// unpacking untuk mengekstrak array menggunakan...
-$list_buah_lokal = ['mangga','rambutan'];
-$list_buah = ['kurma','anggur', ...$list_buah_lokal , 'kismis' ];
+// unpacking untukmengekstrak array menggunakan..
+$list_buah_lokal = ['mangga', 'rambutan'];
+$list_buah = ['kurma', 'anggur', $list_buah_lokal, 'kismis'];
 
-// kurma, anggur, Mangga, rambutan , kismis
+// kurma , anggur , mangga , rambutan, kismis
+// explode array berfungsi memecah belah string lalu di ubah kedalam array 
+// exld ada 22 pparamenter : delimiter(pemisah) , string sasaran (sasaran yang akan kita pecah menjadi array)
 
-//explode array berfungsi memecah-belah string lalu diubah ke dalam array 
+$siswa  = "caca rafa maritza uwuu";
+// var_dump(explode(" ", "$siswa"));
 
-// expload ada 2 parameter : delimeter(pemisah),string sasaran  (sasaran yang akan kita pecah menjadi array)
+// impload fungsi kembalikannya expload
+// impload ada 2 paramenter : glue(penggabung), array sasaran yang akan kita gabung menjadi string
 
-$siswa = "andi budi dono kasino indro";
-var_dump(explode(" ",$siswa))
+$siswa_pintar = ['refa', 'agus', 'novan'];//array
 
-// impoad fungsi kebalikannya expload
-// impload dia 2 parameter: glue (pengabung),array sasaran(sasaran yang akan kita gabung menjadi string)
+$siswa_jago= implode(' wkwk ', $siswa_pintar);//string
 
-$siswa_pintar = ['refa','agus','novan']; //array
 
-$siswa_jago = implode (' ',$siswa_pintar); // array
 
 
 ?>
